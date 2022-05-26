@@ -1,0 +1,16 @@
+dict1 = {
+    "royal":50,
+    "sagar":45,
+    "prafulla":40,
+    "missan":35
+}
+def looping_through(loops):
+    higest_marks = 0
+    result = ''
+    for marks in loops:
+        single_person_marks = loops[marks]
+        if single_person_marks > higest_marks:
+            higest_marks = single_person_marks
+            result = marks
+    print(f" the higest marks is {result}")
+looping_through(dict1)
